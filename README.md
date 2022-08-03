@@ -1,8 +1,11 @@
 # shapelets
-Routines for modelling astronomical sources and Point Spread Functions as shapelets
+Python and fortran77 routines for modelling astronomical sources and Point Spread Functions as shapelets
 
 In KiDS, PSFs are modelled as 'psf maps', which are shapelets with coefficients that vary as polynomials across the image.
-The shapeletpsf module allows these maps to be read and turned into postage stamps of the PSF at any (fractional) position in the image.
+These codes allow these maps to be read and turned into postage stamps of the PSF at any (fractional) position in the image.
+
+
+# python3 (shapeletpsf.py)
 
 Import shapeletpsf and read the help; it explains the two classes shapeletseries and shapeletmap, how to read a PSF map file, and how to use it.
 A simple way to use shapeletpsf is provided in the example.py file, which reads in a map (an example is provided) and shows the PSF at a given pixel position. E.g.,:
@@ -63,3 +66,20 @@ Shapelet coefs: [order 00 10 01 20 11 02 30 21 12 03 ...]
  -8.05574154e-05 -3.65866075e-05]
                             
 ![example_17000_15000 5](https://user-images.githubusercontent.com/6078683/182646126-fd4af06b-0d0b-46aa-84b6-bf08c6cf124b.png)
+
+
+# fortran77 shapeletpsf.F
+
+The original subroutines that do the same as the python module above.
+
+A wrapper programme is also provided: compile with 
+
+gfortran -Dmm=16 -Dmsh=155 -Dmmpoly=6 -Dmmpoly2=28
+-ffixed-line-length-0 psfmap2pixpsf.F shapeletpsf.F -o psfmap2pixpsf
+
+and run as
+
+(echo KIDS_0.0_-31.2_i2.psf.map; echo 12000 8000) | psfmap2pixpsf
+
+(this simple wrapper simple writes out all elements of the postage
+stamp array stamp(i,j) )
