@@ -97,8 +97,9 @@ class shapeletseries:
         return z
 
 def hermites(x,nsh):
-        ''' construct Hermite polynomials Hn(x), for orders 0..nsh
-            return as a dictionary indexed by order n'''
+        ''' construct Hermite polynomials Hn(x), for orders 0..nsh,
+            and normalise so that Hn(x) Hm(x) exp(-x^2) integrate to delta_mn.
+            return the Hn(x) as a dictionary indexed by order n'''
         h={}
         h[0]=0*x+1
         h[1]=2*x
