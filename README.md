@@ -7,7 +7,7 @@ The shapeletpsf module allows these maps to be read and turned into postage stam
 Import shapeletpsf and read the help; it explains the two classes shapeletseries and shapeletmap, how to read a PSF map file, and how to use it.
 A simple way to use shapeletpsf is provided in the example.py file, which reads in a map (an example is provided) and shows the PSF at a given pixel position. E.g.,:
 
-python3 example.py KIDS_0.0_-31.2_i2.psf.map 6000.8 5000.1
+*python3 example.py KIDS_0.0_-31.2_i2.psf.map 6000.8 5000.1*
 Loaded (nsh=10, n=4) shapelet map from KIDS_0.0_-31.2_i2.psf.map
 Integral of PSF, scale radius: 0.997741330420072 2.17293406
 Shapelet coefs: [order 00 10 01 20 11 02 30 21 12 03 ...]
@@ -32,7 +32,7 @@ Shapelet coefs: [order 00 10 01 20 11 02 30 21 12 03 ...]
 ![example_600 8_5000 1](https://user-images.githubusercontent.com/6078683/182646093-832cfb69-35ff-4252-a561-5f139fd219cb.png)
 
 
-python3 example.py KIDS_0.0_-31.2_i2.psf.map 17000 15000.5
+*python3 example.py KIDS_0.0_-31.2_i2.psf.map 17000 15000.5*
 Loaded (nsh=10, n=4) shapelet map from KIDS_0.0_-31.2_i2.psf.map
 Integral of PSF, scale radius: 0.9994863401595164 2.17293406
 Shapelet coefs: [order 00 10 01 20 11 02 30 21 12 03 ...]
