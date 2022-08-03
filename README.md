@@ -8,9 +8,13 @@ Import shapeletpsf and read the help; it explains the two classes shapeletseries
 A simple way to use shapeletpsf is provided in the example.py file, which reads in a map (an example is provided) and shows the PSF at a given pixel position. E.g.,:
 
 *python3 example.py KIDS_0.0_-31.2_i2.psf.map 6000.8 5000.1*
+
 Loaded (nsh=10, n=4) shapelet map from KIDS_0.0_-31.2_i2.psf.map
+
 Integral of PSF, scale radius: 0.997741330420072 2.17293406
+
 Shapelet coefs: [order 00 10 01 20 11 02 30 21 12 03 ...]
+
 [ 1.28344960e-01  2.21663057e-12  5.16109804e-12 -1.11720752e-02
   5.48167864e-04 -1.94338421e-02  1.77388759e-03  6.64638510e-04
   1.21116663e-03  1.32725960e-04  9.73213814e-03  2.54315604e-04
@@ -33,9 +37,13 @@ Shapelet coefs: [order 00 10 01 20 11 02 30 21 12 03 ...]
 
 
 *python3 example.py KIDS_0.0_-31.2_i2.psf.map 17000 15000.5*
+
 Loaded (nsh=10, n=4) shapelet map from KIDS_0.0_-31.2_i2.psf.map
+
 Integral of PSF, scale radius: 0.9994863401595164 2.17293406
+
 Shapelet coefs: [order 00 10 01 20 11 02 30 21 12 03 ...]
+
 [ 1.30287211e-01  1.69371847e-12 -8.56441620e-12 -1.44900016e-02
  -3.43722894e-03 -1.97632552e-02 -9.54054877e-04  1.01236595e-03
  -3.72260524e-04  2.35350267e-04  1.14176052e-02  4.88776368e-04
