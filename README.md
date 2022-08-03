@@ -36,7 +36,7 @@ Shapelet coefs: [order 00 10 01 20 11 02 30 21 12 03 ...]
 ![example_600 8_5000 1](https://user-images.githubusercontent.com/6078683/182646093-832cfb69-35ff-4252-a561-5f139fd219cb.png)
 
 
-**python3 example.py KIDS_0.0_-31.2_i2.psf.map 17000 15000.5**  * gives output*
+**python3 example.py KIDS_0.0_-31.2_i2.psf.map 17000 15000.5**  *gives output*
 
 Loaded (nsh=10, n=4) shapelet map from KIDS_0.0_-31.2_i2.psf.map
 
