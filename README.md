@@ -81,5 +81,7 @@ and run as
 
 (echo KIDS_0.0_-31.2_i2.psf.map; echo 12000 8000) | psfmap2pixpsf
 
+to give you the PSF at position 12000,8000 on the image.
+
 (this simple wrapper simple writes out all elements of the postage
 stamp array stamp(i,j) )
